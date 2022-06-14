@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值应用1-水平垂直居中</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .box_center{
+            width:200px;
+            height: 200px;
+            background-color: rebeccapurple;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /*margin-left: -100px;*/
+            /*margin-top: -200px;*/
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+<div class="box_center"></div>
+</body>
+
+</html>

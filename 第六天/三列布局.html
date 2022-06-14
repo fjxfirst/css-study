@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex实现三列</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 100%;
+            display: flex;
+        }
+        .column{
+
+        }
+        .left{
+            background-color: coral;
+            /*flex-basis: 100px;*/
+            /*width: 200px;*/
+            flex: 1;
+        }
+        .center{
+            background-color: rebeccapurple;
+        }
+        .right{
+            background-color: teal;
+
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="column left">leftleftleftleftleftleftleftleftleftleftleftleftleftleftleft</div>
+    <div class="column center">center</div>
+    <div class="column right">right</div>
+</div>
+</body>
+</html>

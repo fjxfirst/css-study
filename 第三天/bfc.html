@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bfc</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .div0{
+            /*float: left;*/
+            width: 500px;
+            height: 500px;
+            background: antiquewhite;
+            margin:50px;
+        }
+        /*.div0::before{*/
+        /*    content: '';*/
+        /*    display: table;*/
+        /*}*/
+        .div1,.div2{
+            width:100px;
+            height:100px;
+        }
+        .div1{
+            margin-top: 30px;
+            background: rosybrown;
+            margin-bottom: 50px;
+            overflow: hidden;
+        }
+        .div2{
+            background: coral;
+            margin-top: 30px;
+        }
+        .bfc{
+            overflow: hidden;
+        }
+.div3{
+    margin-top: 100px;
+    width: 90px;
+    height: 90px;
+    background: blue;
+}
+    </style>
+</head>
+<body>
+<div class="div0">
+    <div class="div1"><div class="div3">
+        div3
+    </div></div>
+    <!--<div class="bfc">-->
+    <!--    <div class="div2">div2</div>-->
+    <!--</div>-->
+</div>
+</body>
+</html>

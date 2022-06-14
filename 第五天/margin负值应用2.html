@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值应用2-列表两端对齐</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .clearFix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container{
+            margin:0 auto;
+            width: 500px;
+            border: 1px black solid;
+            margin-bottom: 20px;
+        }
+        .list{
+            background: rosybrown;
+        }
+        .list li{
+            width:92px;
+            height: 92px;
+            background-color: #ccc;
+            margin-bottom: 20px;
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+//容器宽度固定，每行5个，每个元素间距10px
+<div class="container">
+    <ul class="list clearFix">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+        <li>9</li>
+        <li>10</li>
+    </ul>
+</div>
+</body>
+
+</html>

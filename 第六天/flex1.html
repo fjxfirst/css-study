@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>flex1</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .box{
+            display: flex;
+            width: 400px;
+            height: 400px;
+            background: #cccccc;
+            margin: 0 auto;
+            flex-direction: column;
+            /*flex-wrap: wrap;*/
+            /*flex-flow: nowrap column;*/
+            /*align-content: flex-start;*/
+            /*justify-content: space-around;*/
+            /*align-items: flex-start;*/
+            align-items: center;
+
+        }
+
+        .item {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            background: coral;
+            text-align: center;
+        }
+        .son1{}
+        .son2{}
+        .son3{order: 2;}
+        .son4{
+            order: 0;
+            align-self: flex-start;
+        }
+        .son5{
+            order: -1;
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+<section class="box">
+    <div class="item son1">1</div>
+    <div class="item son2">2</div>
+    <div class="item son3">3</div>
+    <div class="item son4">4</div>
+    <div class="item son5">5</div>
+</section>
+</body>
+</html>

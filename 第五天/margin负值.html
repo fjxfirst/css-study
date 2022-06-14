@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>margin负值</title>
+    <style>
+        html {
+            font-size: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div,
+        span {
+            font-size: 16px;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(192, 223, 20);
+            /* float: left; */
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(223, 176, 20);
+            float: left;
+        }
+
+        .box3 {
+            width: 90px;
+            height: 100px;
+            background-color: aqua;
+            float: left;
+            margin-right: 15px;
+        }
+
+        .span1 {
+            /* float: left; */
+            background-color: bisque;
+
+        }
+
+        .span2 {
+            /* float: left; */
+
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box3">box3</div>
+    </div>
+    <div class="box2">box2</div>
+    <span class="span1">hello</span>
+    <span class="span2">world</span>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动2</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .span1{
+            background: coral;
+            float: left;
+        }
+        .span2{
+            background: rosybrown;
+        }
+        .wrap{
+            width: 300px;
+            height: 100px;
+            border:1px solid ;
+            overflow: auto;
+        }
+        .son{
+            background: rosybrown;
+            float: left;
+            white-space: nowrap;
+        }
+        li{
+            display: inline-block;
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+
+        }
+        .div0{
+            border: 5px solid red;
+            /*display: inline-block;*/
+            /*overflow: hidden;*/
+        }
+        /*.div0::after{*/
+        /*    content: '';*/
+        /*    display: block;*/
+        /*    clear: both;*/
+        /*}*/
+        .div1{
+            width: 100px;
+            height: 100px;
+            background: rosybrown;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<span class="span1">111111这是一个内联元素1</span><span class="span2">222222这是一个内联元素2</span>
+
+<div class="wrap">
+    <ul class="son">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</div>
+
+<div class="div0">
+    <div class="div1">div1</div>
+    <div class="div1">div1</div>
+    <div class="div1">div1</div>
+    <div class="div1">div1</div>
+    <div class="div1">div1</div>
+    <div class="div1">div1</div>
+</div>
+</body>
+</html>
